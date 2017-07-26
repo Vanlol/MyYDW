@@ -1,0 +1,66 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - IQKeyboardManagerSwift (4.0.8)
+  - Masonry (1.0.2)
+  - MJRefresh (3.1.12)
+  - ReactiveCocoa (5.0.1):
+    - ReactiveSwift (~> 1.1)
+  - ReactiveSwift (1.1.0):
+    - Result (~> 3.1)
+  - Realm (2.4.4):
+    - Realm/Headers (= 2.4.4)
+  - Realm/Headers (2.4.4)
+  - RealmSwift (2.4.4):
+    - Realm (= 2.4.4)
+  - Result (3.2.1)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - SnapKit (3.2.0)
+  - SwiftyDrop (3.0.3)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - AFNetworking
+  - IQKeyboardManagerSwift
+  - Masonry
+  - MJRefresh
+  - ReactiveCocoa
+  - RealmSwift
+  - SDWebImage
+  - SnapKit
+  - SwiftyDrop
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  IQKeyboardManagerSwift: c04bc9f68473823f825eb44d958fce98d921bead
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  ReactiveCocoa: f577006aa6c7b0b08020109ebaae3b77ada00adc
+  ReactiveSwift: 2f4e4a02e5a5c87ea63f5fe667163ce2a67cbb57
+  Realm: 5a280a1f5a9a3c267bebf4f41ee47911137703d7
+  RealmSwift: 0c02b9f2d4be4301c497ed10e53a0580584eb1dd
+  Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftyDrop: 785f95aabc26c4d832576bb78dc4ba7d0594a95b
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 165a487eff9de28c5984c1e3ea81b1ab154d6c09
+
+COCOAPODS: 1.2.0
