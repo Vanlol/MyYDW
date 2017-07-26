@@ -27,7 +27,6 @@ class MineViewController: BaseViewController {
         
         initNav()
         blindViewModel()
-        
     }
     /**
      * 初始化nav
