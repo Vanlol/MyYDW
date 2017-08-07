@@ -70,7 +70,7 @@ class MineViewController: BaseViewController {
         let nextDay = Date(timeIntervalSinceNow: -(Double(hour*3600 + minute * 60 + second) + 86400))
         let predicate = HKQuery.predicateForSamples(withStart: nowDay, end: nextDay, options: .init(rawValue: 0))
         let sampleQuery = HKSampleQuery(sampleType: sampleType!, predicate: predicate, limit: 0, sortDescriptors: [start,end]) { (query, results, error) in
-            let allStepCount = 0
+            //let allStepCount = 0
             for result in results! {
                 let quantity = (result as! HKQuantitySample).quantity
                 print(quantity)
