@@ -38,6 +38,7 @@
 		845774981F0CE83A006DC959 /* BasicAlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845774971F0CE83A006DC959 /* BasicAlertViewModel.swift */; };
 		8457749A1F0CEE00006DC959 /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845774991F0CEE00006DC959 /* UIBarButtonItem+Category.swift */; };
 		845FE63D1F0B3C210001389D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FE63C1F0B3C210001389D /* BaseViewController.swift */; };
+		84622A5F1F38592500CDCAA2 /* WKCommunityMsgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84622A5E1F38592400CDCAA2 /* WKCommunityMsgViewController.swift */; };
 		8488D1BE1F21864100890038 /* BaseWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488D1BD1F21864100890038 /* BaseWKWebViewController.swift */; };
 		8488D1C01F2189B300890038 /* WebTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488D1BF1F2189B300890038 /* WebTestViewController.swift */; };
 		8488D1C21F21A32B00890038 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488D1C11F21A32B00890038 /* SwiftSpinner.swift */; };
@@ -130,6 +131,7 @@
 		845774971F0CE83A006DC959 /* BasicAlertViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicAlertViewModel.swift; sourceTree = "<group>"; };
 		845774991F0CEE00006DC959 /* UIBarButtonItem+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Category.swift"; sourceTree = "<group>"; };
 		845FE63C1F0B3C210001389D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		84622A5E1F38592400CDCAA2 /* WKCommunityMsgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKCommunityMsgViewController.swift; sourceTree = "<group>"; };
 		8478438F1F170EED006E169C /* SwiftCocoa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftCocoa.entitlements; sourceTree = "<group>"; };
 		8488D1BD1F21864100890038 /* BaseWKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWKWebViewController.swift; sourceTree = "<group>"; };
 		8488D1BF1F2189B300890038 /* WebTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebTestViewController.swift; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 				843892591F1F616A0067DBF4 /* YDCommunityViewController.swift */,
 				843C74CE1F203B4A008C6986 /* CommunityMessageViewController.swift */,
 				8488D1BF1F2189B300890038 /* WebTestViewController.swift */,
+				84622A5E1F38592400CDCAA2 /* WKCommunityMsgViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -868,6 +871,7 @@
 				8430A17F1F0F28A900DFCFF4 /* MainModel.swift in Sources */,
 				8430A1861F0F320500DFCFF4 /* RestDown.swift in Sources */,
 				8488D1C01F2189B300890038 /* WebTestViewController.swift in Sources */,
+				84622A5F1F38592500CDCAA2 /* WKCommunityMsgViewController.swift in Sources */,
 				84DB4AA21F0DE5CE00CA9FE7 /* DiscoverViewModel.swift in Sources */,
 				84DB4AA01F0DE56A00CA9FE7 /* FinanceViewModel.swift in Sources */,
 				8430CFB51F26D4490029FC00 /* ProgressHUD.swift in Sources */,
