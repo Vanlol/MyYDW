@@ -6,6 +6,15 @@
 //  Copyright © 2017年 admin. All rights reserved.
 //
 
+/** 代码快捷键
+ *  command + \                 添加断点
+ *  command + /                 添加单行注释
+ *  command + option + 方向键    开/合代码
+ *  command + control + E       全部选中某一个变量
+ *  command + option + []       上下移动代码
+ *  command + []                左右移动代码
+ */
+
 import UIKit
 
 @UIApplicationMain
