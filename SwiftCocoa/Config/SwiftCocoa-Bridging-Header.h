@@ -3,5 +3,6 @@
 //
 
 
-
-
+//AES128加密添加
+#import <CommonCrypto/CommonCryptor.h>
+#import <CommonCrypto/CommonHMAC.h>

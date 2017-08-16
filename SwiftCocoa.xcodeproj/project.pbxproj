@@ -39,6 +39,7 @@
 		8457749A1F0CEE00006DC959 /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845774991F0CEE00006DC959 /* UIBarButtonItem+Category.swift */; };
 		845FE63D1F0B3C210001389D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FE63C1F0B3C210001389D /* BaseViewController.swift */; };
 		84622A5F1F38592500CDCAA2 /* WKCommunityMsgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84622A5E1F38592400CDCAA2 /* WKCommunityMsgViewController.swift */; };
+		846258F61F3C5E79009BCCA1 /* JDSwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846258F51F3C5E79009BCCA1 /* JDSwiftSpinner.swift */; };
 		8488D1BE1F21864100890038 /* BaseWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488D1BD1F21864100890038 /* BaseWKWebViewController.swift */; };
 		8488D1C01F2189B300890038 /* WebTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488D1BF1F2189B300890038 /* WebTestViewController.swift */; };
 		8488D1C21F21A32B00890038 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488D1C11F21A32B00890038 /* SwiftSpinner.swift */; };
@@ -53,6 +54,7 @@
 		84D3D6611F271330001EB473 /* YDCommunityTopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3D65F1F271330001EB473 /* YDCommunityTopicCell.swift */; };
 		84D3D6621F271330001EB473 /* YDCommunityTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D3D6601F271330001EB473 /* YDCommunityTopicCell.xib */; };
 		84D3D6641F271ADB001EB473 /* String+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3D6631F271ADB001EB473 /* String+Category.swift */; };
+		84D806C81F43DD1C0037CDC4 /* Data+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D806C71F43DD1C0037CDC4 /* Data+Category.swift */; };
 		84DB4A981F0DD98C00CA9FE7 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB4A971F0DD98C00CA9FE7 /* BaseViewModel.swift */; };
 		84DB4A9E1F0DE53800CA9FE7 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB4A9D1F0DE53800CA9FE7 /* MainViewModel.swift */; };
 		84DB4AA01F0DE56A00CA9FE7 /* FinanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB4A9F1F0DE56A00CA9FE7 /* FinanceViewModel.swift */; };
@@ -132,6 +134,7 @@
 		845774991F0CEE00006DC959 /* UIBarButtonItem+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Category.swift"; sourceTree = "<group>"; };
 		845FE63C1F0B3C210001389D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		84622A5E1F38592400CDCAA2 /* WKCommunityMsgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKCommunityMsgViewController.swift; sourceTree = "<group>"; };
+		846258F51F3C5E79009BCCA1 /* JDSwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDSwiftSpinner.swift; sourceTree = "<group>"; };
 		8478438F1F170EED006E169C /* SwiftCocoa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftCocoa.entitlements; sourceTree = "<group>"; };
 		8488D1BD1F21864100890038 /* BaseWKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWKWebViewController.swift; sourceTree = "<group>"; };
 		8488D1BF1F2189B300890038 /* WebTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebTestViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +150,7 @@
 		84D3D65F1F271330001EB473 /* YDCommunityTopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDCommunityTopicCell.swift; sourceTree = "<group>"; };
 		84D3D6601F271330001EB473 /* YDCommunityTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YDCommunityTopicCell.xib; sourceTree = "<group>"; };
 		84D3D6631F271ADB001EB473 /* String+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Category.swift"; sourceTree = "<group>"; };
+		84D806C71F43DD1C0037CDC4 /* Data+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Category.swift"; sourceTree = "<group>"; };
 		84DB4A971F0DD98C00CA9FE7 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		84DB4A9D1F0DE53800CA9FE7 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		84DB4A9F1F0DE56A00CA9FE7 /* FinanceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceViewModel.swift; sourceTree = "<group>"; };
@@ -518,6 +522,7 @@
 				84EA10D51F0A1E7100BEDBD6 /* Int+Category.swift */,
 				845774951F0CCB2B006DC959 /* UIImage+Category.swift */,
 				845774991F0CEE00006DC959 /* UIBarButtonItem+Category.swift */,
+				84D806C71F43DD1C0037CDC4 /* Data+Category.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -581,6 +586,7 @@
 				8421741E1F185746005449BC /* InfiniteNoticeView.swift */,
 				8488D1C11F21A32B00890038 /* SwiftSpinner.swift */,
 				843467471F257D4F00E3A79E /* TestSwfitSpinner.swift */,
+				846258F51F3C5E79009BCCA1 /* JDSwiftSpinner.swift */,
 				8430CFB41F26D4490029FC00 /* ProgressHUD.swift */,
 			);
 			path = Vender;
@@ -843,6 +849,7 @@
 				8430CFC11F26F1610029FC00 /* YDCommunityModualCell.swift in Sources */,
 				84EA10D01F0A1CE500BEDBD6 /* J.swift in Sources */,
 				8457749A1F0CEE00006DC959 /* UIBarButtonItem+Category.swift in Sources */,
+				846258F61F3C5E79009BCCA1 /* JDSwiftSpinner.swift in Sources */,
 				843C74CF1F203B4A008C6986 /* CommunityMessageViewController.swift in Sources */,
 				8430A17D1F0F1A3700DFCFF4 /* TestTabBarViewModel.swift in Sources */,
 				84DB4AA71F0E260900CA9FE7 /* TestTabBarController.swift in Sources */,
@@ -868,6 +875,7 @@
 				84EA10D41F0A1DCF00BEDBD6 /* C.swift in Sources */,
 				8430A1821F0F306300DFCFF4 /* RestAPI.swift in Sources */,
 				84EA10CA1F0A190900BEDBD6 /* Config.swift in Sources */,
+				84D806C81F43DD1C0037CDC4 /* Data+Category.swift in Sources */,
 				8430A17F1F0F28A900DFCFF4 /* MainModel.swift in Sources */,
 				8430A1861F0F320500DFCFF4 /* RestDown.swift in Sources */,
 				8488D1C01F2189B300890038 /* WebTestViewController.swift in Sources */,

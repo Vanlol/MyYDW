@@ -32,6 +32,7 @@ class YDCommunityViewController: BaseViewController {
         initNav()
         initView()
         blindViewModel()
+        Print.dlog("15612345678".AES128Crypt())
     }
     /**
      * 初始化nav
@@ -50,8 +51,9 @@ class YDCommunityViewController: BaseViewController {
     //MARK: 搜索按钮点击事件
     func searchButtonClick() {
         if isHud {return}
-        let vc = WebTestViewController()
-        navigationController?.pushViewController(vc, animated: true)
+//        let vc = WebTestViewController()
+//        navigationController?.pushViewController(vc, animated: true)
+        _ = JDSwiftSpinner.shared.show()
         
     }
     //MARK: 信息按钮点击事件

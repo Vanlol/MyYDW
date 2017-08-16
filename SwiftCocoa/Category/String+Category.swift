@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 extension String {
     
@@ -112,5 +113,28 @@ extension String {
         }
         return parm
     }
+    
+    
+    
+    /*
+     加密过程: 手机号 + "KEY"  ----(AES加密)---->   获得Data   ----加密结构Base64转码---->    获得试用的密钥
+     */
+    //MARK: AES128加密.
+    func AES128Crypt() -> String {
+        let key = "yinduozibenjiami"
+        let ketData = (key as NSString).data(using: String.Encoding.utf8.rawValue)
+        
+        let mobileData = (self as NSString).data(using: String.Encoding.utf8.rawValue)
+        
+        let result = mobileData?.AES128Cryptt(operation: CCOperation(kCCEncrypt), keyData: ketData!)
+        if result!.length > 0 {
+            let str = result!.base64EncodedString(options: .lineLength64Characters)
+            return str
+        }else{
+            Print.dlog("加密出错了!!!")
+            return self
+        }
+    }
+    
     
 }
