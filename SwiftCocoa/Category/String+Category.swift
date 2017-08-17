@@ -31,7 +31,8 @@ extension String {
         return rect.size.height
         
     }
-    
+//    let charSet = CharacterSet(charactersIn: "{}").inverted
+//    let newJson = jsonstr!.addingPercentEncoding(withAllowedCharacters: charSet)
     //getitemurl:getItemUrl?id=2833&cname=%25u7528%25u6237%25u4EA4%25u6D41&comment=  webView返回的secume.
     //%25u7528%25u6237%25u4EA4%25u6D41解码
     //unescape解码,
