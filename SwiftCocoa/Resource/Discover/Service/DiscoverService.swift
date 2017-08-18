@@ -14,6 +14,44 @@ class DiscoverService {
     
     static let shared = DiscoverService()
     
+    
+    func loadCommunityRedPoint(success:@escaping((Any) -> Void)) {
+        RestAPI.sendGETRequest(request: P.DISCOVERY_ACTIVITY, params: ["mm" : U.getMobile()!], success: { (data) in
+            let json = JSON(data!)
+            Print.dlog("发现首页\(json)")
+            let discoverM = DiscoverModel()
+            discoverM.img_src = json["img_src"].stringValue
+            discoverM.bbs_url = json["bbs_url"].stringValue
+            discoverM.art_id = json["art_id"].stringValue
+            discoverM.save_time = json["save_time"].intValue
+            discoverM.risk = json["risk"].arrayObject as! [String]
+            discoverM.bbs = json["bbs"].stringValue
+            discoverM.img_id = json["img_id"].stringValue
+            discoverM.reply_id = json["reply_id"].stringValue
+            discoverM.hu_title = json["hu_title"].stringValue
+            discoverM.comments_id = json["comments_id"].stringValue
+            discoverM.img_title = json["img_title"].stringValue
+            discoverM.mm = json["mm"].stringValue
+            discoverM.activity = json["activity"].stringValue
+            discoverM.shop_sign = json["shop_sign"].stringValue
+            discoverM.hu_url = json["hu_url"].stringValue
+            discoverM.bbs_sign = json["bbs_sign"].stringValue
+            discoverM.base_url = json["base_url"].stringValue
+            discoverM.news = json["news"].stringValue
+            discoverM.shop = json["shop"].stringValue
+            discoverM.notice = json["notice"].stringValue
+            discoverM.weixin = json["weixin"].intValue
+            discoverM.shop_url = json["shop_url"].stringValue
+            discoverM.report = json["report"].arrayObject as! [String]
+            discoverM.dynamic_id = json["dynamic_id"].stringValue
+            success(discoverM)
+        }) { (error) in
+            
+        }
+    }
+    
+    
+    
     func loadYDCommunityData(success:@escaping ((Any) -> Void),failed:@escaping (() -> Void)) {
         RestAPI.sendGETRequest(request: P.ACTIVITY_BANNER, params: ["mm":U.getMobile()!], success: { (data) in
             var json = JSON(data!)

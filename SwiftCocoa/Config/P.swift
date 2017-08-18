@@ -17,7 +17,6 @@ struct P {
     static let HOME_USER_DATA = "Index/index"
     /** 发现首页地址 **/
     static let DISCOVERY_ACTIVITY = "Activity/index"
-    
     /** 社区首页  **/
     static let ACTIVITY_BANNER = "Activityyuzt/banner"
     

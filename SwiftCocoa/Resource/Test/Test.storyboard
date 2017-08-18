@@ -721,6 +721,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="ZQt-fv-Taq"/>
+                    <connections>
+                        <outlet property="gfggRedVi" destination="gT3-TC-Ee2" id="RvB-19-dwg"/>
+                        <outlet property="jfscRedVi" destination="f7C-9h-VOT" id="s1w-Va-3q8"/>
+                        <outlet property="safeDays" destination="msF-OT-B22" id="TnO-fe-EpD"/>
+                        <outlet property="versionLab" destination="VW3-ln-ZgF" id="hW9-xQ-uqG"/>
+                        <outlet property="xxplRedVi" destination="3EX-r3-6bW" id="T7K-E3-KO4"/>
+                        <outlet property="yddtRedVi" destination="hRi-Bg-I4l" id="ufE-Rc-7Cj"/>
+                        <outlet property="ydsqRedVi" destination="Ncd-hq-9dp" id="tMO-3A-hGs"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GT4-GY-bzT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

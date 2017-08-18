@@ -10,11 +10,17 @@ import UIKit
 
 class DiscoverViewController: BaseTableViewController {
     
-    
+    @IBOutlet weak var ydsqRedVi: UIView!   //银多社区红点
+    @IBOutlet weak var gfggRedVi: UIView!   //官方公告红点
+    @IBOutlet weak var yddtRedVi: UIView!   //银多动态红点
+    @IBOutlet weak var xxplRedVi: UIView!   //信息披露红点
+    @IBOutlet weak var jfscRedVi: UIView!   //积分商城红点
+    @IBOutlet weak var safeDays: UILabel!   //安全运营时间x天
+    @IBOutlet weak var versionLab: UILabel! //当前版本号
     
     
     lazy var discoverVM = DiscoverViewModel()
-    
+    fileprivate lazy var discoverM = DiscoverModel()
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         Print.dlog("discover willappear")
@@ -32,12 +38,13 @@ class DiscoverViewController: BaseTableViewController {
     fileprivate func initNav() {
         setUpSystemNav(title: "发现", hexColorBg: 0xffffff)
         setUpNavShadow()
+        versionLab.text = Tools.getLocalVersion()
     }
     
     fileprivate func blindViewModel() {
-        
-        
-        
+        discoverVM.loadDiscoverRedPoint { (model) in
+            self.discoverM = model
+        }
     }
     
     //MARK: 联系客服按钮点击事件
