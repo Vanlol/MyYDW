@@ -19,11 +19,18 @@ class MainViewController: BaseViewController {
             contentTableView.scrollIndicatorInsets = UIEdgeInsets(top: -20, left: 0, bottom: -49, right: 0)
         }
     }
-    
+    //MARK: VM
     lazy var mainVM = MainViewModel()
+    //MARK: M
     fileprivate lazy var mainM = MainModel()
+    //MARK: 登陆后的headerVi
     fileprivate lazy var headerVi:MainHeaderView = {
         let vi = MainHeaderView.mainView()
+        return vi
+    }()
+    //MARK: 未登录的headerVi
+    fileprivate lazy var unloginVi:UnLoginHeaderView = {
+        let vi = UnLoginHeaderView.unLoginView()
         return vi
     }()
     
@@ -146,6 +153,12 @@ extension MainViewController : UITableViewDelegate , UITableViewDataSource {
         switch indexPath.row {
         case 0:
             Print.dlog("1")
+            for vi in tableHeaderVi.subviews {
+                vi.removeFromSuperview()
+            }
+            tableHeaderVi.bounds.size.height = 360
+            contentTableView.tableHeaderView = tableHeaderVi
+            tableHeaderVi.addSubview(unloginVi)
         case 1:
             Print.dlog("2")
         case 2:

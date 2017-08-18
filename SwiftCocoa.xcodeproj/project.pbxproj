@@ -34,6 +34,8 @@
 		843892581F1F5A2D0067DBF4 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843892571F1F5A2D0067DBF4 /* BaseTableViewController.swift */; };
 		8438925A1F1F616A0067DBF4 /* YDCommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843892591F1F616A0067DBF4 /* YDCommunityViewController.swift */; };
 		843C74CF1F203B4A008C6986 /* CommunityMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C74CE1F203B4A008C6986 /* CommunityMessageViewController.swift */; };
+		8450C65A1F4594BA0052A519 /* UnLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450C6591F4594BA0052A519 /* UnLoginHeaderView.swift */; };
+		8450C65C1F4594C70052A519 /* UnLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8450C65B1F4594C70052A519 /* UnLoginHeaderView.xib */; };
 		845774961F0CCB2B006DC959 /* UIImage+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845774951F0CCB2B006DC959 /* UIImage+Category.swift */; };
 		845774981F0CE83A006DC959 /* BasicAlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845774971F0CE83A006DC959 /* BasicAlertViewModel.swift */; };
 		8457749A1F0CEE00006DC959 /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845774991F0CEE00006DC959 /* UIBarButtonItem+Category.swift */; };
@@ -129,6 +131,8 @@
 		843892571F1F5A2D0067DBF4 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		843892591F1F616A0067DBF4 /* YDCommunityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDCommunityViewController.swift; sourceTree = "<group>"; };
 		843C74CE1F203B4A008C6986 /* CommunityMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityMessageViewController.swift; sourceTree = "<group>"; };
+		8450C6591F4594BA0052A519 /* UnLoginHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnLoginHeaderView.swift; sourceTree = "<group>"; };
+		8450C65B1F4594C70052A519 /* UnLoginHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnLoginHeaderView.xib; sourceTree = "<group>"; };
 		845774951F0CCB2B006DC959 /* UIImage+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Category.swift"; sourceTree = "<group>"; };
 		845774971F0CE83A006DC959 /* BasicAlertViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicAlertViewModel.swift; sourceTree = "<group>"; };
 		845774991F0CEE00006DC959 /* UIBarButtonItem+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Category.swift"; sourceTree = "<group>"; };
@@ -406,6 +410,8 @@
 			children = (
 				8430A18C1F0F88EF00DFCFF4 /* MainHeaderView.swift */,
 				8430A18E1F0F890500DFCFF4 /* MainHeaderView.xib */,
+				8450C6591F4594BA0052A519 /* UnLoginHeaderView.swift */,
+				8450C65B1F4594C70052A519 /* UnLoginHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -759,6 +765,7 @@
 				84242F451F25C12F003509A2 /* JavaScript.html in Resources */,
 				84974C6D1F0B414B00945C2E /* Mine.storyboard in Resources */,
 				8430A18F1F0F890500DFCFF4 /* MainHeaderView.xib in Resources */,
+				8450C65C1F4594C70052A519 /* UnLoginHeaderView.xib in Resources */,
 				84D3D6621F271330001EB473 /* YDCommunityTopicCell.xib in Resources */,
 				84EA10E01F0A2E9900BEDBD6 /* Tabbar.storyboard in Resources */,
 				84DB4AA91F0E263F00CA9FE7 /* Test.storyboard in Resources */,
@@ -848,6 +855,7 @@
 				84974C651F0B40C800945C2E /* DiscoverViewController.swift in Sources */,
 				8430CFC11F26F1610029FC00 /* YDCommunityModualCell.swift in Sources */,
 				84EA10D01F0A1CE500BEDBD6 /* J.swift in Sources */,
+				8450C65A1F4594BA0052A519 /* UnLoginHeaderView.swift in Sources */,
 				8457749A1F0CEE00006DC959 /* UIBarButtonItem+Category.swift in Sources */,
 				846258F61F3C5E79009BCCA1 /* JDSwiftSpinner.swift in Sources */,
 				843C74CF1F203B4A008C6986 /* CommunityMessageViewController.swift in Sources */,
