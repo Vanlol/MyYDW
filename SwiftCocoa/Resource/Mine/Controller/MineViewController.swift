@@ -8,6 +8,7 @@
 
 import UIKit
 import HealthKit
+import Photos
 
 
 class MineViewController: BaseViewController {
@@ -27,6 +28,7 @@ class MineViewController: BaseViewController {
         
         initNav()
         blindViewModel()
+        
     }
     /**
      * 初始化nav
@@ -37,8 +39,21 @@ class MineViewController: BaseViewController {
     }
     
     fileprivate func blindViewModel() {
-        
+        PhotoAuthoriz().checkAuthorizationState(allow: { 
+            Print.dlog("allow")
+        }) { 
+            Print.dlog("deine")
+        }
     }
+    
+    
+}
+
+
+
+
+
+extension MineViewController {
     
     fileprivate func testHealthKit() {
         
@@ -52,7 +67,6 @@ class MineViewController: BaseViewController {
                 print("获取授权失败")
             }
         }
-        
     }
     
     fileprivate func readStepCount() {
@@ -76,14 +90,10 @@ class MineViewController: BaseViewController {
                 print(quantity)
             }
         }
-        
         healthStore.execute(sampleQuery)
-        
     }
     
 }
-
-
 
 
 

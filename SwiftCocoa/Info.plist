@@ -26,9 +26,11 @@
 		<true/>
 	</dict>
 	<key>NSHealthShareUsageDescription</key>
-	<string>"需要您的授权才能访问HealthKit"</string>
+	<string>&quot;需要您的授权才能访问HealthKit&quot;</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>&quot;需要您的授权才能访问相册&quot;</string>
 	<key>NSHealthUpdateUsageDescription</key>
-	<string>"需要您的授权才能访问HealthKit"</string>
+	<string>&quot;需要您的授权才能访问HealthKit&quot;</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

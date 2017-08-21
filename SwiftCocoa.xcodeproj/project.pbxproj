@@ -34,6 +34,7 @@
 		843467481F257D4F00E3A79E /* TestSwfitSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843467471F257D4F00E3A79E /* TestSwfitSpinner.swift */; };
 		843892581F1F5A2D0067DBF4 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843892571F1F5A2D0067DBF4 /* BaseTableViewController.swift */; };
 		8438925A1F1F616A0067DBF4 /* YDCommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843892591F1F616A0067DBF4 /* YDCommunityViewController.swift */; };
+		8438BACC1F4AA5E300CD19FD /* PhotoAuthoriz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438BACB1F4AA5E300CD19FD /* PhotoAuthoriz.swift */; };
 		843C74CF1F203B4A008C6986 /* CommunityMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C74CE1F203B4A008C6986 /* CommunityMessageViewController.swift */; };
 		8450C65A1F4594BA0052A519 /* UnLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450C6591F4594BA0052A519 /* UnLoginHeaderView.swift */; };
 		8450C65C1F4594C70052A519 /* UnLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8450C65B1F4594C70052A519 /* UnLoginHeaderView.xib */; };
@@ -132,6 +133,7 @@
 		843467471F257D4F00E3A79E /* TestSwfitSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSwfitSpinner.swift; sourceTree = "<group>"; };
 		843892571F1F5A2D0067DBF4 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		843892591F1F616A0067DBF4 /* YDCommunityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDCommunityViewController.swift; sourceTree = "<group>"; };
+		8438BACB1F4AA5E300CD19FD /* PhotoAuthoriz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAuthoriz.swift; sourceTree = "<group>"; };
 		843C74CE1F203B4A008C6986 /* CommunityMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityMessageViewController.swift; sourceTree = "<group>"; };
 		8450C6591F4594BA0052A519 /* UnLoginHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnLoginHeaderView.swift; sourceTree = "<group>"; };
 		8450C65B1F4594C70052A519 /* UnLoginHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnLoginHeaderView.xib; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 				84EA10C11F0A128B00BEDBD6 /* ThirdParty */,
 				84EA10C21F0A128B00BEDBD6 /* Utils */,
 				84EA10C31F0A128B00BEDBD6 /* Vender */,
+				8438BACA1F4AA57500CD19FD /* PhotosKit */,
 				84174AE81EF8C38E00BC4655 /* Assets.xcassets */,
 				84174AED1EF8C38E00BC4655 /* Info.plist */,
 			);
@@ -306,6 +309,14 @@
 				8432C6A11F467C350066026A /* Tools.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		8438BACA1F4AA57500CD19FD /* PhotosKit */ = {
+			isa = PBXGroup;
+			children = (
+				8438BACB1F4AA5E300CD19FD /* PhotoAuthoriz.swift */,
+			);
+			path = PhotosKit;
 			sourceTree = "<group>";
 		};
 		845FE62C1F0B3BBC0001389D /* Discover */ = {
@@ -860,6 +871,7 @@
 				84EA10DA1F0A2D2E00BEDBD6 /* U.swift in Sources */,
 				845774981F0CE83A006DC959 /* BasicAlertViewModel.swift in Sources */,
 				8438925A1F1F616A0067DBF4 /* YDCommunityViewController.swift in Sources */,
+				8438BACC1F4AA5E300CD19FD /* PhotoAuthoriz.swift in Sources */,
 				84EA10E21F0A2F0300BEDBD6 /* TabBarController.swift in Sources */,
 				8430A18D1F0F88EF00DFCFF4 /* MainHeaderView.swift in Sources */,
 				84974C631F0B408D00945C2E /* FinanceViewController.swift in Sources */,
