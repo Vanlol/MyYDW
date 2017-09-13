@@ -733,7 +733,7 @@
 				TargetAttributes = {
 					84174ADD1EF8C38E00BC4655 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = W7X79N3BH8;
+						DevelopmentTeam = 8HWBFATR9L;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1056,7 +1056,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = W7X79N3BH8;
+				DEVELOPMENT_TEAM = 8HWBFATR9L;
 				INFOPLIST_FILE = SwiftCocoa/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1075,7 +1075,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = W7X79N3BH8;
+				DEVELOPMENT_TEAM = 8HWBFATR9L;
 				INFOPLIST_FILE = SwiftCocoa/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
