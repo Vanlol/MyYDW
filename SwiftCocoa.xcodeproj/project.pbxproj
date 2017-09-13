@@ -78,6 +78,9 @@
 		84EA10E01F0A2E9900BEDBD6 /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EA10DF1F0A2E9900BEDBD6 /* Tabbar.storyboard */; };
 		84EA10E21F0A2F0300BEDBD6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA10E11F0A2F0300BEDBD6 /* TabBarController.swift */; };
 		84EA10E41F0A415600BEDBD6 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA10E31F0A415600BEDBD6 /* CustomTabBar.swift */; };
+		F91AB97C1F6903CF00B16475 /* XYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91AB97B1F6903CF00B16475 /* XYMainViewController.swift */; };
+		F91AB97F1F690F4D00B16475 /* XYHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91AB97E1F690F4D00B16475 /* XYHeaderView.swift */; };
+		F91AB9811F690F5E00B16475 /* XYHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F91AB9801F690F5E00B16475 /* XYHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +182,9 @@
 		84EA10DF1F0A2E9900BEDBD6 /* Tabbar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 		84EA10E11F0A2F0300BEDBD6 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		84EA10E31F0A415600BEDBD6 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		F91AB97B1F6903CF00B16475 /* XYMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYMainViewController.swift; sourceTree = "<group>"; };
+		F91AB97E1F690F4D00B16475 /* XYHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYHeaderView.swift; sourceTree = "<group>"; };
+		F91AB9801F690F5E00B16475 /* XYHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -443,7 +449,7 @@
 			children = (
 				845FE6391F0B3BBC0001389D /* Controller */,
 				845FE63A1F0B3BBC0001389D /* Model */,
-				845FE63B1F0B3BBC0001389D /* View */,
+				F91AB97D1F690F0F00B16475 /* View */,
 				84DB4A9B1F0DE4E400CA9FE7 /* ViewModel */,
 				84974C6C1F0B414B00945C2E /* Mine.storyboard */,
 			);
@@ -454,6 +460,7 @@
 			isa = PBXGroup;
 			children = (
 				84974C661F0B40F100945C2E /* MineViewController.swift */,
+				F91AB97B1F6903CF00B16475 /* XYMainViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -463,13 +470,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		845FE63B1F0B3BBC0001389D /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		84DB4A961F0DD92D00CA9FE7 /* ViewModel */ = {
@@ -662,6 +662,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F91AB97D1F690F0F00B16475 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F91AB97E1F690F4D00B16475 /* XYHeaderView.swift */,
+				F91AB9801F690F5E00B16475 /* XYHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -785,6 +794,7 @@
 				84974C691F0B411600945C2E /* Finance.storyboard in Resources */,
 				84974C6B1F0B413300945C2E /* Discover.storyboard in Resources */,
 				84242F451F25C12F003509A2 /* JavaScript.html in Resources */,
+				F91AB9811F690F5E00B16475 /* XYHeaderView.xib in Resources */,
 				84974C6D1F0B414B00945C2E /* Mine.storyboard in Resources */,
 				8430A18F1F0F890500DFCFF4 /* MainHeaderView.xib in Resources */,
 				8450C65C1F4594C70052A519 /* UnLoginHeaderView.xib in Resources */,
@@ -899,8 +909,10 @@
 				84EA10D21F0A1D1000BEDBD6 /* W.swift in Sources */,
 				84DB4A981F0DD98C00CA9FE7 /* BaseViewModel.swift in Sources */,
 				84243CDE1F15E6B8006CEB56 /* InfiniteCircularView.swift in Sources */,
+				F91AB97F1F690F4D00B16475 /* XYHeaderView.swift in Sources */,
 				8488D1BE1F21864100890038 /* BaseWKWebViewController.swift in Sources */,
 				84DB4AA41F0DE60E00CA9FE7 /* MineViewModel.swift in Sources */,
+				F91AB97C1F6903CF00B16475 /* XYMainViewController.swift in Sources */,
 				84D3D6641F271ADB001EB473 /* String+Category.swift in Sources */,
 				84EA10CE1F0A1C7300BEDBD6 /* P.swift in Sources */,
 				8430CFBE1F26E1720029FC00 /* YDCommunityModel.swift in Sources */,

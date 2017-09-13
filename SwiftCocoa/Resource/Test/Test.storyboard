@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wUl-Mj-uA8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wUl-Mj-uA8">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -904,13 +904,28 @@
                     <view key="view" contentMode="scaleToFill" id="Bsv-rb-eEv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lO-mf-4Bv">
+                                <rect key="frame" x="269" y="108" width="62" height="30"/>
+                                <state key="normal" title="点击跳转">
+                                    <color key="titleColor" red="0.065290178571428575" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="gotoXYMainVcClick:" destination="Txd-z6-jax" eventType="touchUpInside" id="hCZ-Yc-5W5"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0lO-mf-4Bv" secondAttribute="trailing" constant="44" id="dTb-CM-vcq"/>
+                            <constraint firstItem="0lO-mf-4Bv" firstAttribute="top" secondItem="G1D-tH-HEj" secondAttribute="bottom" constant="44" id="mim-hj-HnT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8hf-HX-L63"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKN-y7-OM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1164" y="2230"/>
+            <point key="canvasLocation" x="1164" y="2229.5352323838083"/>
         </scene>
     </scenes>
     <resources>

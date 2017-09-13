@@ -46,6 +46,12 @@ class MineViewController: BaseViewController {
         }
     }
     
+    // MARK: 模仿咸鱼首页滑动
+    @IBAction func gotoXYMainVcClick(_ sender: Any) {
+        tabPushVCWith(storyboardName: "Mine", vcId: "XYMainViewControllerID")
+    }
+    
+    
     
 }
 

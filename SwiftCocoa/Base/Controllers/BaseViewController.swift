@@ -67,6 +67,11 @@ class BaseViewController: UIViewController {
         navigationController?.navigationBar.setBackgroundImage(UIImage.colorImage(hex: hexColorBg), for: .any, barMetrics: .default)
     }
     
+    public func tabPushVCWith(storyboardName:String,vcId:String){
+        let vc = UIStoryboard(name: storyboardName, bundle: nil).instantiateViewController(withIdentifier: vcId)
+        vc.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
     public func loadingShow() {
         isHud = true
