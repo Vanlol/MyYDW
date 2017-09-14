@@ -128,6 +128,9 @@ class XYMainViewController: BaseViewController {
 extension XYMainViewController:UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.isKind(of: UITableView.classForCoder()) {
+            return
+        }
         
     }
     
