@@ -14,10 +14,13 @@ class XYMainViewController: BaseViewController {
     
     static let dynamicTVTag = 1
     static let photoTVTag = 2
+    let floatViHeight:CGFloat = 38
+    let headerViHeight:CGFloat = 400
+    
     
     fileprivate lazy var headerView:XYHeaderView = {
         let vi = UINib(nibName: "XYHeaderView", bundle: nil).instantiate(withOwner: nil, options: nil).first as! XYHeaderView
-        vi.frame = CGRect(x: 0, y: 0, width: C.SCREEN_WIDTH, height: 375)
+        vi.frame = CGRect(x: 0, y: 0, width: C.SCREEN_WIDTH, height: 400)
         return vi
     }()
     
@@ -48,13 +51,13 @@ class XYMainViewController: BaseViewController {
         let dynamicVC = UIStoryboard(name: "Mine", bundle: nil).instantiateViewController(withIdentifier: "XYDynamicViewControllerID") as! XYDynamicViewController
         addChildViewController(dynamicVC)
         dynamicVC.tableView.tag = XYMainViewController.dynamicTVTag
-        dynamicVC.tableView.contentInset = UIEdgeInsets(top: C.SCREEN_WIDTH - 64, left: 0, bottom: 0, right: 0)
+        dynamicVC.tableView.contentInset = UIEdgeInsets(top: headerViHeight - 64, left: 0, bottom: 64, right: 0)
         dynamicVC.tableView.addObserver(self, forKeyPath: "contentOffset", options: .new, context: nil)
         
         let photoVC = UIStoryboard(name: "Mine", bundle: nil).instantiateViewController(withIdentifier: "XYPhotoViewControllerID") as! XYPhotoViewController
         addChildViewController(photoVC)
         photoVC.tableView.tag = XYMainViewController.photoTVTag
-        photoVC.tableView.contentInset = UIEdgeInsets(top: C.SCREEN_WIDTH - 64, left: 0, bottom: 0, right: 0)
+        photoVC.tableView.contentInset = UIEdgeInsets(top: headerViHeight - 64, left: 0, bottom: 64, right: 0)
         photoVC.tableView.addObserver(self, forKeyPath: "contentOffset", options: .new, context: nil)
         
         contentScrollView.addSubview(dynamicVC.tableView)
@@ -64,6 +67,7 @@ class XYMainViewController: BaseViewController {
     //MARK: 重新布局子视图
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        Print.dlog("viewDidLayoutSubviews")
         for subVC in childViewControllers {
             if subVC.isKind(of: XYDynamicViewController.classForCoder()) {
                 subVC.view.frame = CGRect(x: 0, y: 0, width: C.SCREEN_WIDTH, height: C.SCREEN_HEIGHT)
@@ -79,12 +83,30 @@ class XYMainViewController: BaseViewController {
         if (contentScrollView.contentOffset.x == 0 && tabVi.tag == XYMainViewController.photoTVTag) || (contentScrollView.contentOffset.x == C.SCREEN_WIDTH && tabVi.tag == XYMainViewController.dynamicTVTag) {
             return
         }
-        Print.dlog(tabVi.contentOffset.y)
-        if tabVi.contentOffset.y >= -38 {
-            headerView.frame.origin.y = -C.SCREEN_WIDTH + 38 + 64
-        }else{
-            headerView.frame.origin.y = -C.SCREEN_WIDTH - tabVi.contentOffset.y + 64
+        Print.dlog(tabVi.contentOffset.y)//-336
+        if tabVi.contentOffset.y >= -floatViHeight {
+            headerView.frame.origin.y = -headerViHeight + floatViHeight + 64
             
+            if tabVi.tag == XYMainViewController.dynamicTVTag {
+                let anotherTabVi = view.viewWithTag(XYMainViewController.photoTVTag) as! UITableView
+                if anotherTabVi.contentOffset.y < -floatViHeight {
+                    anotherTabVi.contentOffset = CGPoint(x: 0, y: -floatViHeight)
+                }
+            }else{
+                let anotherTabVi = view.viewWithTag(XYMainViewController.dynamicTVTag) as! UITableView
+                if anotherTabVi.contentOffset.y < -floatViHeight {
+                    anotherTabVi.contentOffset = CGPoint(x: 0, y: -floatViHeight)
+                }
+            }
+            
+        }else{
+            headerView.frame.origin.y = -headerViHeight + 64 - tabVi.contentOffset.y
+            
+            if (tabVi.contentOffset.y < -floatViHeight && tabVi.contentOffset.y >= -headerViHeight) {
+                let tag = tabVi.tag == XYMainViewController.dynamicTVTag ? XYMainViewController.photoTVTag : XYMainViewController.dynamicTVTag
+                let anotherTabVi = view.viewWithTag(tag) as! UITableView
+                anotherTabVi.contentOffset = tabVi.contentOffset
+            }
         }
         
     }

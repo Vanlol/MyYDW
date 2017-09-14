@@ -14,7 +14,7 @@ class XYDynamicViewController: BaseTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //navigationController?.navigationBar.isTranslucent = true
+//        navigationController?.navigationBar.isTranslucent = false
         tableView.register(UINib(nibName: "XYDynamicCell", bundle: nil), forCellReuseIdentifier: "XYDynamicCellID")
         
     }
@@ -24,7 +24,7 @@ class XYDynamicViewController: BaseTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 30
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
