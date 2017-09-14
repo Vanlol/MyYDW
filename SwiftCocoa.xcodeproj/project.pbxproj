@@ -81,6 +81,10 @@
 		F91AB97C1F6903CF00B16475 /* XYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91AB97B1F6903CF00B16475 /* XYMainViewController.swift */; };
 		F91AB97F1F690F4D00B16475 /* XYHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91AB97E1F690F4D00B16475 /* XYHeaderView.swift */; };
 		F91AB9811F690F5E00B16475 /* XYHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F91AB9801F690F5E00B16475 /* XYHeaderView.xib */; };
+		F91AB9831F6921E200B16475 /* XYDynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91AB9821F6921E200B16475 /* XYDynamicViewController.swift */; };
+		F91AB9851F6921FD00B16475 /* XYPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91AB9841F6921FD00B16475 /* XYPhotoViewController.swift */; };
+		F96CF0F51F6A0F8500632B54 /* XYDynamicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96CF0F31F6A0F8500632B54 /* XYDynamicCell.swift */; };
+		F96CF0F61F6A0F8500632B54 /* XYDynamicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96CF0F41F6A0F8500632B54 /* XYDynamicCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,6 +189,10 @@
 		F91AB97B1F6903CF00B16475 /* XYMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYMainViewController.swift; sourceTree = "<group>"; };
 		F91AB97E1F690F4D00B16475 /* XYHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYHeaderView.swift; sourceTree = "<group>"; };
 		F91AB9801F690F5E00B16475 /* XYHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYHeaderView.xib; sourceTree = "<group>"; };
+		F91AB9821F6921E200B16475 /* XYDynamicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYDynamicViewController.swift; sourceTree = "<group>"; };
+		F91AB9841F6921FD00B16475 /* XYPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYPhotoViewController.swift; sourceTree = "<group>"; };
+		F96CF0F31F6A0F8500632B54 /* XYDynamicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYDynamicCell.swift; sourceTree = "<group>"; };
+		F96CF0F41F6A0F8500632B54 /* XYDynamicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYDynamicCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -461,6 +469,8 @@
 			children = (
 				84974C661F0B40F100945C2E /* MineViewController.swift */,
 				F91AB97B1F6903CF00B16475 /* XYMainViewController.swift */,
+				F91AB9821F6921E200B16475 /* XYDynamicViewController.swift */,
+				F91AB9841F6921FD00B16475 /* XYPhotoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -667,6 +677,8 @@
 			children = (
 				F91AB97E1F690F4D00B16475 /* XYHeaderView.swift */,
 				F91AB9801F690F5E00B16475 /* XYHeaderView.xib */,
+				F96CF0F31F6A0F8500632B54 /* XYDynamicCell.swift */,
+				F96CF0F41F6A0F8500632B54 /* XYDynamicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -802,6 +814,7 @@
 				84EA10E01F0A2E9900BEDBD6 /* Tabbar.storyboard in Resources */,
 				84DB4AA91F0E263F00CA9FE7 /* Test.storyboard in Resources */,
 				8430CFC21F26F1610029FC00 /* YDCommunityModualCell.xib in Resources */,
+				F96CF0F61F6A0F8500632B54 /* XYDynamicCell.xib in Resources */,
 				84174AE91EF8C38E00BC4655 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -909,6 +922,7 @@
 				84EA10D21F0A1D1000BEDBD6 /* W.swift in Sources */,
 				84DB4A981F0DD98C00CA9FE7 /* BaseViewModel.swift in Sources */,
 				84243CDE1F15E6B8006CEB56 /* InfiniteCircularView.swift in Sources */,
+				F91AB9831F6921E200B16475 /* XYDynamicViewController.swift in Sources */,
 				F91AB97F1F690F4D00B16475 /* XYHeaderView.swift in Sources */,
 				8488D1BE1F21864100890038 /* BaseWKWebViewController.swift in Sources */,
 				84DB4AA41F0DE60E00CA9FE7 /* MineViewModel.swift in Sources */,
@@ -918,6 +932,7 @@
 				8430CFBE1F26E1720029FC00 /* YDCommunityModel.swift in Sources */,
 				84EA10D41F0A1DCF00BEDBD6 /* C.swift in Sources */,
 				8430A1821F0F306300DFCFF4 /* RestAPI.swift in Sources */,
+				F91AB9851F6921FD00B16475 /* XYPhotoViewController.swift in Sources */,
 				84EA10CA1F0A190900BEDBD6 /* Config.swift in Sources */,
 				84D806C81F43DD1C0037CDC4 /* Data+Category.swift in Sources */,
 				8430A17F1F0F28A900DFCFF4 /* MainModel.swift in Sources */,
@@ -925,6 +940,7 @@
 				8488D1C01F2189B300890038 /* WebTestViewController.swift in Sources */,
 				84622A5F1F38592500CDCAA2 /* WKCommunityMsgViewController.swift in Sources */,
 				84DB4AA21F0DE5CE00CA9FE7 /* DiscoverViewModel.swift in Sources */,
+				F96CF0F51F6A0F8500632B54 /* XYDynamicCell.swift in Sources */,
 				84DB4AA01F0DE56A00CA9FE7 /* FinanceViewModel.swift in Sources */,
 				8430CFB51F26D4490029FC00 /* ProgressHUD.swift in Sources */,
 				8430A18B1F0F752300DFCFF4 /* DiscoverModel.swift in Sources */,
