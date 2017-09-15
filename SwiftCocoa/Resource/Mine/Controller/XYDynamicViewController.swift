@@ -33,4 +33,8 @@ class XYDynamicViewController: BaseTableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
 }

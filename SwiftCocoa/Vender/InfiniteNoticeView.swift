@@ -64,6 +64,9 @@ class InfiniteNoticeView: UIView {
     }
     //MARK: 定时器方法
     @objc fileprivate func nextNotice() {
+        guard contentCollectionView.indexPathsForVisibleItems.count != 0 else {
+            return
+        }
         let currentIndexPath = contentCollectionView.indexPathsForVisibleItems.last!
         let currentIndexPathReset = IndexPath(item: currentIndexPath.item, section: totalSections/2)
         contentCollectionView.scrollToItem(at: currentIndexPathReset, at: .top, animated: false)

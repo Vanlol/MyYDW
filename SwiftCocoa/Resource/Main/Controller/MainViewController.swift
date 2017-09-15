@@ -105,7 +105,7 @@ class MainViewController: BaseViewController {
             
         }
         headerVi.bannerView.didClickBannerImageClosure = {(vi,index) -> Void in
-            
+            self.navigationController?.popToRootViewController(animated: true)
         }
         headerVi.noticeView.didClickNoticeClosure = {(vi,index) -> Void in
             
@@ -161,6 +161,7 @@ extension MainViewController : UITableViewDelegate , UITableViewDataSource {
             tableHeaderVi.addSubview(unloginVi)
         case 1:
             Print.dlog("2")
+            navigationController?.popViewController(animated: true)
         case 2:
             Print.dlog("3")
         default:

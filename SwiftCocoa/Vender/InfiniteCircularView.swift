@@ -88,6 +88,9 @@ class InfiniteCircularView: UIView {
     }
     //MARK: 定时器方法
     @objc fileprivate func nextPage() {
+        guard contentCollectionView.indexPathsForVisibleItems.last != nil else {
+            return
+        }
         let currentIndexPath = contentCollectionView.indexPathsForVisibleItems.last!
         let currentIndexPathReset = IndexPath(item: currentIndexPath.item, section: totalSections/2)
         contentCollectionView.scrollToItem(at: currentIndexPathReset, at: .left, animated: false)
