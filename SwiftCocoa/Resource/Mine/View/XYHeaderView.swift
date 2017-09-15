@@ -20,6 +20,12 @@ class XYHeaderView: UIView {
     //动态按钮点击事件
     @IBAction func dynamicButtonClick(_ sender: Any) {
         Print.dlog("dynamicButtonClick")
+        let transition = CATransition()
+        transition.duration = 2
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionPush//kCATransitionMoveIn; //, kCATransitionPush, kCATransitionReveal, kCATransitionFade
+        transition.subtype = kCATransitionFromTop//kCATransitionFromLeft, kCATransitionFromRight, kCATransitionFromTop, kCATransitionFromBottom
+        headImageView.layer.add(transition, forKey: "animation")
     }
     //相册按钮点击事件
     @IBAction func photoButtonClick(_ sender: Any) {

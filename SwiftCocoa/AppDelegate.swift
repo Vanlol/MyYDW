@@ -90,15 +90,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIButton.appearance().isExclusiveTouch = true
         
         U.setMobile(mobile: "b2tTQndEQ2NoUGFnekVqWUZPZEtlQT09")//NWNDMkkvVEVDK1ZCell2UTZiSk5Tdz09 b2tTQndEQ2NoUGFnekVqWUZPZEtlQT09
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.backgroundColor = 0xffffff.HexColor
-        //window?.rootViewController = TabBarController()
-        window?.rootViewController = UIStoryboard(name: "Test", bundle: nil).instantiateViewController(withIdentifier: "TestTabBarControllerID") as! TestTabBarController
-        window?.makeKeyAndVisible()
+        setupRootViewController()
         
         return true
     }
-
+    
+    fileprivate func setupRootViewController() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = 0xffffff.HexColor
+        let loginVc = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "LoginViewControllerID") as! LoginViewController
+        window?.rootViewController = UINavigationController(rootViewController: loginVc)
+        window?.makeKeyAndVisible()
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
