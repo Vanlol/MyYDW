@@ -21,5 +21,27 @@ class RestClient : AFHTTPSessionManager {
         return shared
     }
     
+    //MARK: 检测网络环境
+    func checkNetWork() {
+        let manager = AFNetworkReachabilityManager.shared()
+        manager.startMonitoring()  //提示：要监控网络连接状态，必须要先调用单例的startMonitoring方法
+        manager.setReachabilityStatusChange { (status) in
+            switch status {
+            case .unknown:
+                Print.dlog("未识别网络")
+                U.setNetWorkType(newtWorkType: "unknown")
+            case .notReachable:
+                Print.dlog("未连接网络")
+                U.setNetWorkType(newtWorkType: "nonetwrok")
+            case .reachableViaWWAN:
+                Print.dlog("3g/4g 网络")
+                U.setNetWorkType(newtWorkType: "3g/4g")
+            case .reachableViaWiFi:
+                Print.dlog("wifi 网络")
+                U.setNetWorkType(newtWorkType: "wifi")
+            }
+        }
+    }
+    
 }
 

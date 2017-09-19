@@ -42,8 +42,8 @@ class LoginViewController: BaseViewController {
         transition.duration = 2
         transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
         transition.type = kCATransitionFade//kCATransitionMoveIn; //, kCATransitionPush, kCATransitionReveal, kCATransitionFade
-        //transition.subtype = kCATransitionFromTop//kCATransitionFromLeft, kCATransitionFromRight, kCATransitionFromTop, kCATransitionFromBottom
-        bgImageVi.layer.add(transition, forKey: "animation")
+        transition.subtype = kCATransitionFromTop//kCATransitionFromLeft, kCATransitionFromRight, kCATransitionFromTop, kCATransitionFromBottom
+        view.layer.add(transition, forKey: "animation")
     }
     
     
