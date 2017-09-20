@@ -137,5 +137,34 @@ extension String {
         }
     }
     
+    /*
+     * 数字的格式化:   eg: "1234567789.980988" -> "￥1,234,567,789.98"
+     */
+    func formatNumberStringRMBStyle() -> String {
+        var newString = ""
+        let numformat = NumberFormatter()
+        numformat.numberStyle = .none
+        let tmpNum = numformat.number(from: self)
+        numformat.numberStyle = .currency
+        if let tmpStr = numformat.string(from: tmpNum!) {
+            newString = tmpStr
+        }
+        return newString
+    }
+    /*
+     * 数字的格式化:   eg: "2666.901223" -> "2,666.901"
+     */
+    func formatNumberStringNoneStyle() -> String {
+        var newString = ""
+        let numformat = NumberFormatter()
+        numformat.numberStyle = .decimal
+        let tmpNum = numformat.number(from: self)
+        if let tmpStr = numformat.string(from: tmpNum!) {
+            newString = tmpStr
+        }
+        return newString
+    }
+    
+    
     
 }

@@ -89,4 +89,41 @@ class BaseViewController: UIViewController {
         hudView.failed()
     }
     
+    
+    
+    
+    
 }
+
+extension BaseViewController {
+    //获取当前屏幕显示的控制器
+    public func getCurrentVC() -> UIViewController {
+        var window = UIApplication.shared.keyWindow
+        if window?.windowLevel != UIWindowLevelNormal {
+            let windows = UIApplication.shared.windows
+            for tmpWin in windows {
+                if tmpWin.windowLevel == UIWindowLevelNormal {
+                    window = tmpWin
+                    break
+                }
+            }
+        }
+        let frontView = window?.subviews[0]
+        let nextResponder = frontView?.next
+        if (nextResponder?.isKind(of: UIViewController.classForCoder()))! {
+            return nextResponder as! UIViewController
+        }else{
+            return (window?.rootViewController)!
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
