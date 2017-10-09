@@ -19,9 +19,7 @@ class LoginViewController: BaseViewController {
         super.viewDidLoad()
         hideNav()
         
-        
     }
-    
     //
     @IBAction func loginButtonClick(_ sender: Any) {
         let testTabC = UIStoryboard(name: "Test", bundle: nil).instantiateViewController(withIdentifier: "TestTabBarControllerID") as! TestTabBarController

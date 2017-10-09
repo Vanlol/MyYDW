@@ -5,7 +5,7 @@ target 'SwiftCocoa' do
 pod 'SDWebImage'
 pod 'SwiftyJSON'
 pod 'AFNetworking'
-pod 'SnapKit'
+#pod 'SnapKit'
 pod 'RealmSwift'
 pod 'SwiftyDrop'
 pod 'MJRefresh'
