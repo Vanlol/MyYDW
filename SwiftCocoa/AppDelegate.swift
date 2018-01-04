@@ -95,7 +95,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     //MARK: 设置跟控制器
     fileprivate func setupRootViewController() {
-        window = UIWindow(frame: UIScreen.main.bounds)
+        window = UIWindow()
+        window?.bounds = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
+        print(window?.frame)
         window?.backgroundColor = 0xffffff.HexColor
         let loginVc = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "LoginViewControllerID") as! LoginViewController
         window?.rootViewController = UINavigationController(rootViewController: loginVc)

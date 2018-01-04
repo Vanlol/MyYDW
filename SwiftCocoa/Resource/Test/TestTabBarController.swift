@@ -14,7 +14,7 @@ class TestTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpTabBar()
+        //setUpTabBar()
         setUpTabBarItem()
         tabBar.addSubview(centerBtn)
         delegate = self
@@ -35,7 +35,7 @@ class TestTabBarController: UITabBarController {
      */
     fileprivate func setUpTabBar() {
         tabBar.shadowImage = UIImage()
-        tabBar.backgroundImage = UIImage(named: "tabbar-light")
+        //tabBar.backgroundImage = UIImage(named: "tabbar-light")
         tabBar.layer.shadowOffset = CGSize.zero
         tabBar.layer.shadowColor = 0xaaaaaa.HexColor.cgColor
         tabBar.layer.shadowOpacity = 1

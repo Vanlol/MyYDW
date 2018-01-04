@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="index_bg" translatesAutoresizingMaskIntoConstraints="NO" id="edr-u6-iDH">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rQ-s0-eq7">
                                 <rect key="frame" x="57" y="553" width="260" height="44"/>
@@ -63,13 +63,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2rQ-s0-eq7" firstAttribute="centerX" secondItem="2UO-Y3-fGG" secondAttribute="centerX" id="63a-h4-8BW"/>
-                            <constraint firstItem="Mfo-gD-r3R" firstAttribute="top" secondItem="edr-u6-iDH" secondAttribute="bottom" id="Dcx-e1-NCp"/>
-                            <constraint firstItem="edr-u6-iDH" firstAttribute="top" secondItem="5Ce-hU-te5" secondAttribute="bottom" id="FIc-8o-oa1"/>
+                            <constraint firstItem="edr-u6-iDH" firstAttribute="top" secondItem="2UO-Y3-fGG" secondAttribute="top" id="HKm-4e-UOb"/>
+                            <constraint firstAttribute="bottom" secondItem="edr-u6-iDH" secondAttribute="bottom" id="JE8-RV-zb3"/>
                             <constraint firstAttribute="trailing" secondItem="edr-u6-iDH" secondAttribute="trailing" id="JFZ-3I-rDT"/>
                             <constraint firstItem="edr-u6-iDH" firstAttribute="leading" secondItem="2UO-Y3-fGG" secondAttribute="leading" id="Kon-cB-uRY"/>
                             <constraint firstItem="Mfo-gD-r3R" firstAttribute="top" secondItem="2rQ-s0-eq7" secondAttribute="bottom" constant="70" id="s8E-B5-Y8T"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
                         <outlet property="bgImageVi" destination="edr-u6-iDH" id="FEo-tO-zzL"/>
                     </connections>
@@ -77,6 +78,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ExE-Xm-5Yc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.80000000000000004" y="-106.59670164917542"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yUw-7A-L5A">
+            <objects>
+                <viewController id="ilo-Xj-pG0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rey-Ht-y5E"/>
+                        <viewControllerLayoutGuide type="bottom" id="6ig-E2-dtG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g1q-6h-yI7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xaJ-Wv-YGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="-117"/>
         </scene>
     </scenes>
     <resources>

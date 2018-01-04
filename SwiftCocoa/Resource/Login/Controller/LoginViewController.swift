@@ -19,7 +19,27 @@ class LoginViewController: BaseViewController {
         super.viewDidLoad()
         hideNav()
         
+        let str = "2017-06-12T14:29:39.000+08:00"
+        let nowDate = Date().formatterDate(dateStr: str)
+        
+        Print.dlog(nowDate)
+        
+        print(str.getSMH())
+        print(str.getYMD())
+        print("".getYMD())
+        
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     //
     @IBAction func loginButtonClick(_ sender: Any) {
         let testTabC = UIStoryboard(name: "Test", bundle: nil).instantiateViewController(withIdentifier: "TestTabBarControllerID") as! TestTabBarController

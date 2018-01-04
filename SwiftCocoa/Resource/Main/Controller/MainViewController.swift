@@ -46,6 +46,7 @@ class MainViewController: BaseViewController {
         setUpRefresh()
         blindViewModel()
     }
+    
     /**
      * 初始化View
      */
