@@ -19,22 +19,46 @@ class LoginViewController: BaseViewController {
         super.viewDidLoad()
         hideNav()
         
-        let str = "2017-06-12T14:29:39.000+08:00"
-        let nowDate = Date().formatterDate(dateStr: str)
+//        let str = "2018-01-05T8:03:39.000+08:00"
+//        let creat = Date().formatterDate(dateStr: str)
+//        let zone = Date().currentZoneDate()
+//        let delta = zone.timeIntervalSince(creat)
         
-        Print.dlog(nowDate)
+//        let date1 = Date().formatterDate(dateStr: "2018-01-05T8:03:39.000+08:00")
+//        let date2 = Date().formatterDate(dateStr: "2018-01-05T8:03:39.000+08:00")
+//        let cmps = date2.deltaFrom(date: date1)
         
-        print(str.getSMH())
-        print(str.getYMD())
-        print("".getYMD())
+        let creat = Date().formatterDate(dateStr: "2017-01-04T8:03:39.000+08:00")
         
+        print(creat.isYear())
+        print(creat.isToday())
+        print(creat.isYesterday())
     }
     
     
     
+    fileprivate func test1() {
+        let str = "2018-01-05T8:03:39.000+08:00"
+        let creat = Date().formatterDate(dateStr: str)
+        
+        let delta = Date().currentZoneDate().timeIntervalSince(creat)
+        print(delta)
+    }
     
-    
-    
+    fileprivate func test2() {
+        let calendar = Calendar.current
+//        let result = calendar.component(.yearForWeekOfYear, from: Date().currentZoneDate())
+//        let zoneDate = Date().currentZoneDate()
+//        let year = calendar.component(.minute, from: zoneDate)
+//        print(year)
+        let creat = Date().formatterDate(dateStr: "2017-02-05T8:03:39.000+08:00")
+        
+        let cmps = calendar.dateComponents([.year,.month,.day,.yearForWeekOfYear,.weekOfMonth,.weekOfYear], from: creat)
+        print(cmps.yearForWeekOfYear!)
+        print(cmps.weekOfMonth!)
+        print(cmps.weekOfYear!)
+        
+    }
     
     
     

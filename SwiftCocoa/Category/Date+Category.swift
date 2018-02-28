@@ -12,11 +12,12 @@ import Foundation
 extension Date {
     /** 返回当前时间(时区为当前时区) **/
     func currentZoneDate() -> Date {
-        let currentDate = Date()
-        let zone = NSTimeZone.system
-        let time = zone.secondsFromGMT(for: currentDate)
-        let nowDate = currentDate.addingTimeInterval(TimeInterval(time))
-        return nowDate
+//        let curDate = Date()
+//        let time = TimeZone.current.secondsFromGMT(for: curDate)
+//        let zoneDate = curDate.addingTimeInterval(TimeInterval(time))
+        let time = TimeZone.current.secondsFromGMT()                        //当前时区与格陵兰时区相差的秒数
+        let zoneDate = Date().addingTimeInterval(TimeInterval(time))
+        return zoneDate
     }
     /** 将服务器返回的字符串时间转时间 **/
     func formatterDate(dateStr:String) -> Date {
@@ -27,8 +28,43 @@ extension Date {
         if date != nil {
             return date!
         }else{
-            return Date()
+            return self.currentZoneDate()
         }
+    }
+    /** 比较self和from之间的时间差值 **/
+    func deltaFrom(date:Date) -> DateComponents {
+        let cmps = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second], from: date, to: self)
+        return cmps
+    }
+    
+    /** 获取当前日期的,年,月,日,时,分,秒 **/
+    func compontentDetail(detail:Calendar.Component) -> Int {
+        let result = Calendar.current.component(detail, from: self)
+        return result
+    }
+    
+    /** 是否为今年 **/
+    func isYear() -> Bool {
+        let nowYear = Calendar.current.component(.year, from: Date().currentZoneDate())
+        let selfYear = Calendar.current.component(.year, from: self)
+        return nowYear == selfYear
+    }
+    
+    /** 是否为今天 **/
+    func isToday() -> Bool {
+        let nowCmps = Calendar.current.dateComponents([.year,.month,.day], from: Date().currentZoneDate())
+        let selfCmps = Calendar.current.dateComponents([.year,.month,.day], from: self)
+        return nowCmps.year == selfCmps.year && nowCmps.month == selfCmps.month && nowCmps.day == selfCmps.day
+    }
+    
+    /** 是否为昨天 **/
+    func isYesterday() -> Bool {
+        let fmt = DateFormatter()
+        fmt.dateFormat = "yyyy-MM-dd"
+        let nowDate = fmt.date(from: fmt.string(from: Date().currentZoneDate()))!
+        let selfDate = fmt.date(from: fmt.string(from: self))!
+        let cmps = Calendar.current.dateComponents([.year,.month,.day], from: selfDate, to: nowDate)
+        return cmps.year == 0 && cmps.month == 0 && cmps.day == 1
     }
     
 }
@@ -99,7 +135,7 @@ extension String {
  s:      秒，1-2位
  ss:     秒，2位，带前置0
  S:      毫秒
- Z：      GMT（时区）
+ Z：     (时区) GMT:Greenwich Mean Time   CST:China Standard Time   CET:Central European Time
  
  */
 

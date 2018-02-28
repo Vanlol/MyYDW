@@ -44,11 +44,13 @@ class MainHeaderView: UIView {
         super.awakeFromNib()
         initView()
     }
+    
     //MARK: 初始化View
     fileprivate func initView() {
         addSubview(bannerView)
         declarationView.addSubview(noticeView)
     }
+    
     //MARK: 更多公告按钮点击事件
     @IBAction func moreDeclarationBtnClick(_ sender: Any) {
         moreDeclarationClosure?()
